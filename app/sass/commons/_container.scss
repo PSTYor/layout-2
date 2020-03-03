@@ -1,0 +1,52 @@
+// Контейнер для разрешения от 1800px и больше
+@media (min-width: $screen-extra-large) {
+    .container {
+        width: 1750px;
+        margin: 0 auto;
+    }
+}
+
+// Контейнер для разрешения от 1200px до 1800px
+@media (min-width: $screen-large) and (max-width: $screen-extra-large - 1px) {
+    .container {
+        width: 1150px;
+        margin: 0 auto;
+    }
+}
+
+// Контейнер для разрешения от 1024px до 1200px
+@media (min-width: $screen-medium) and (max-width: $screen-large - 1px) {
+    .container {
+        width: 974px;
+        margin: 0 auto;
+    }
+}
+
+// Контейнер для разрешения от 768px до 1024px
+@media (min-width: $screen-small) and (max-width: $screen-medium - 1px) {
+    .container {
+        width: 718px;
+        margin: 0 auto;
+    }
+}
+
+// Контейнер для разрешения от 480px до 768px
+@media (min-width: $screen-extra-small) and (max-width: $screen-small - 1px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+// Контейнер для разрешения от 360px до 480px
+@media (min-width: $screen-extra-e-small) and (max-width: $screen-extra-small - 1px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+// Контейнер для разрешения от 0 до 360px
+@media (min-width: 0) and (max-width: $screen-extra-e-small - 1px) {
+
+}
