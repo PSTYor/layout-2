@@ -1,8 +1,28 @@
 /* Сброс стилей */
 @import "../../node_modules/node-normalize-scss/normalize";
 
+
 /* Миксины, шрифты, переменные и тд. */
 @import "commons/variables";
 @import "commons/mixins";
 @import "commons/fonts";
 @import "commons/container";
+
+
+/* Стили для блоков */
+/* Шапка */
+@import "blocks/header/header";
+@import "blocks/header/header-nav/header-nav";
+@import "blocks/header/header-text/header-text";
+@import "blocks/header/header-nav/header-nav-items/header-nav-items";
+@import "blocks/header/header-nav/header-nav-logo/header-nav-logo";
+@import "blocks/header/header-text/header-text";
+
+
+/* Глобальные стили */
+@import "blocks/button/button";
+
+body {
+    font-family: $font-roboto;
+    font-size: 16px;
+}

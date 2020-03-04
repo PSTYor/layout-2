@@ -1,0 +1,19 @@
+.header-nav-items {
+    &__wrap {
+        display: flex;
+    }
+
+    &__item {
+        padding: 15px 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        transition: color .3s;
+
+        &:hover {
+            color: #34547A;
+        }
+    }
+}
