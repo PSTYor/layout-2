@@ -6,7 +6,8 @@ const gulp = require("gulp"),
       autoprefixer = require("gulp-autoprefixer"),
       sourcemaps = require("gulp-sourcemaps"),
       brSync = require("browser-sync").create(),
-      imagemin = require("gulp-imagemin");
+      imagemin = require("gulp-imagemin"),
+      pug = require("gulp-pug");
 
 gulp.task("sass", function() {
     return gulp.src("./app/sass/style.scss")
@@ -27,8 +28,11 @@ gulp.task("sass", function() {
         }));
 });
 
-gulp.task("html", function() {
-    return gulp.src("./app/index.html")
+gulp.task("pug", function () {
+    return gulp.src("./app/pug/index.pug")
+        .pipe(pug({
+            pretty: true
+        }))
         .pipe(gulp.dest("./dist"))
         .pipe(brSync.reload({
             stream: true
@@ -55,7 +59,7 @@ gulp.task("brSync", function() {
 
 gulp.task("watch", gulp.parallel("brSync", function() {
     gulp.watch("./app/sass/**/*.scss", gulp.parallel("sass"));
-    gulp.watch("./app/*.html", gulp.parallel("html"));
+    gulp.watch("./app/pug/index.pug", gulp.parallel("pug"));
     gulp.watch("./app/img/*", gulp.parallel("image"));
 }));
 
