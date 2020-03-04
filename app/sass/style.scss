@@ -1,2 +1,8 @@
 /* Сброс стилей */
 @import "../../node_modules/node-normalize-scss/normalize";
+
+/* Миксины, шрифты, переменные и тд. */
+@import "commons/variables";
+@import "commons/mixins";
+@import "commons/fonts";
+@import "commons/container";
