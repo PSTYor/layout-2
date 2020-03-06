@@ -59,7 +59,7 @@ gulp.task("brSync", function() {
 
 gulp.task("watch", gulp.parallel("brSync", function() {
     gulp.watch("./app/sass/**/*.scss", gulp.parallel("sass"));
-    gulp.watch("./app/pug/index.pug", gulp.parallel("pug"));
+    gulp.watch("./app/pug/**/*.pug", gulp.parallel("pug"));
     gulp.watch("./app/img/*", gulp.parallel("image"));
 }));
 
