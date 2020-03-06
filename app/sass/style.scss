@@ -18,6 +18,16 @@
 @import "blocks/header/header-nav/header-nav-logo/header-nav-logo";
 @import "blocks/header/header-text/header-text";
 
+/* Главное содержимое */
+/* Обо мне */
+@import "blocks/article/about-us/about-us";
+@import "blocks/article/about-us/about-us-text/about-us-text";
+
+/* Мои проекты */
+@import "blocks/article/my-projects/my-projects";
+@import "blocks/article/my-projects/my-projects-projects/my-projects-projects";
+@import "blocks/article/my-projects/my-projects-projects/my-projects-projects-project/my-projects-projects-project";
+
 
 /* Глобальные стили */
 @import "blocks/button/button";

@@ -1,0 +1,23 @@
+.my-projects-projects-project {
+    &__wrap {
+        display: flex;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 0 0 15px;
+        color: #fff;
+    }
+
+    &__number {
+        font-weight: 500;
+        font-size: 21px;
+        color: #fff;
+    }
+}

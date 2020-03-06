@@ -1,0 +1,11 @@
+section.my-projects
+    .container
+        .my-projects__wrap
+            .my-projects-projects
+                .my-projects-projects__wrap
+                    -for (let x = 0; x <= 5; x++)
+                        .my-projects-projects-project
+                            .my-projects-projects-project__wrap
+                                img(src="img/icon-project.svg" alt="изображение проекта").my-projects-projects-project__image
+                                .my-projects-projects-project__text проектов
+                                    span.my-projects-projects-project__number 40+
