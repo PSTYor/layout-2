@@ -1,3 +1,6 @@
+include ../../commons/mixins
+include ../../commons/variables
+
 header.header
     .container
         .header__wrap
@@ -5,13 +8,7 @@ header.header
                 .header-nav__wrap
                     .header-nav-logo
                         a(href="#").header-nav-logo__link wd
-                    .header-nav-items
-                        .header-nav-items__wrap
-                            a(href="#").header-nav-items__item главная
-                            a(href="#").header-nav-items__item об авторе
-                            a(href="#").header-nav-items__item работы
-                            a(href="#").header-nav-items__item процессы
-                            a(href="#").header-nav-items__item контакты
+                    +header-nav-items(item_nav)
             .header-text
                 .header-text__wrap
                     .header-text__left

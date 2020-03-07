@@ -1,0 +1,15 @@
+// Микси для создание навигационной панели
+mixin header-nav-items(items)
+    .header-nav-items
+        .header-nav-items__wrap
+            each item in items
+                a(href="#").header-nav-items__item= item
+
+// Миксин для создания проектов
+mixin my-projects-projects-project
+    - for (var i = 0; i <= 5; i++)
+        .my-projects-projects-project
+            .my-projects-projects-project__wrap
+                img(src="img/icon-project.svg" alt="изображение проекта").my-projects-projects-project__image
+                .my-projects-projects-project__text проектов
+                    span.my-projects-projects-project__number 40+
