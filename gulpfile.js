@@ -29,7 +29,7 @@ gulp.task("sass", function() {
 });
 
 gulp.task("pug", function () {
-    return gulp.src("./app/pug/index.pug")
+    return gulp.src("./app/pug/*.pug")
         .pipe(pug({
             pretty: true
         }))
