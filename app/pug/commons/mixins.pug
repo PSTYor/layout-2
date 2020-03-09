@@ -13,3 +13,13 @@ mixin my-projects-projects-project
                 img(src="img/icon-project.svg" alt="изображение проекта").my-projects-projects-project__image
                 .my-projects-projects-project__text проектов
                     span.my-projects-projects-project__number 40+
+
+// Миксин для создания навыков
+mixin my-skills-skills(items)
+    .my-skills-skills
+        .my-skills-skills__wrap
+            .my-skills-skills__title мои навыки
+            each item in items
+                .my-skills-skills__skill= item
+                .my-skills-skills__exp
+                    span.my-skills-skills__exp-percent

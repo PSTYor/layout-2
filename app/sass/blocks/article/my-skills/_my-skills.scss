@@ -1,0 +1,16 @@
+.my-skills {
+    &__wrap {
+        display: flex;
+        justify-content: space-around;
+        padding: 100px 0;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__image {
+        width: 450px;
+    }
+}

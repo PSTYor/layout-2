@@ -1,0 +1,10 @@
+.about-jobs {
+    background-color: #EEEFF1;
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 70px 0;
+    }
+}
