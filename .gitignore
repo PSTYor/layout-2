@@ -1,4 +1,7 @@
-.idea
+# Игнорируемые папки
 node_modules
-package-lock.json
+.idea
 dist
+
+# Игнорируемые файлы
+package-lock.json
