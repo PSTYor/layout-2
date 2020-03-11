@@ -1,7 +1,8 @@
 module.exports = [
-    './gulp/task/sass',
-    './gulp/task/pug',
-    './gulp/task/watch',
-    './gulp/task/image',
-    './gulp/task/browserSync'
+    './gulp/tasks/sass',
+    './gulp/tasks/pug',
+    './gulp/tasks/watch',
+    './gulp/tasks/image',
+    './gulp/tasks/browserSync',
+    './gulp/tasks/svg'
 ];

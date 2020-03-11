@@ -1,3 +1,5 @@
+include ../../../commons/mixins
+
 section.about-jobs
     .container
         .about-jobs__wrap
@@ -8,5 +10,5 @@ section.about-jobs
                     стандартной "рыбой" для текстов на латинице с начала XVI века.
             .about-jobs-video
                 .about-jobs-video__wrap
-                    .about-jobs-video__button
-                        a(href="#").about-jobs-video__triangle
+                    a(href="#").about-jobs-video__button
+                        +add-svg("about-jobs-video__btn", "play-button")

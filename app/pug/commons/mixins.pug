@@ -10,7 +10,7 @@ mixin my-projects-projects-project
     - for (var i = 0; i <= 5; i++)
         .my-projects-projects-project
             .my-projects-projects-project__wrap
-                img(src="img/icon-project.svg" alt="изображение проекта").my-projects-projects-project__image
+                +add-svg("my-projects-projects-project__image", "icon-project")
                 .my-projects-projects-project__text проектов
                     span.my-projects-projects-project__number 40+
 
@@ -23,3 +23,8 @@ mixin my-skills-skills(items)
                 .my-skills-skills__skill= item
                 .my-skills-skills__exp
                     span.my-skills-skills__exp-percent
+
+// Миксин для добавления svg
+mixin add-svg(name_class, name)
+    svg(class="" + name_class)
+        use(xlink:href="img/svg/symbol/svg/sprite.symbol.svg#" + name)

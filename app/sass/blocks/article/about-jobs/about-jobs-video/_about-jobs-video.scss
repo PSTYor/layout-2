@@ -11,17 +11,14 @@
         background-size: cover;
     }
 
-    &__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &__btn {
         width: 100px;
         height: 100px;
-        background-color: #fff;
-        border-radius: 50%;
-    }
+        fill: #fff;
+        transition: .3s;
 
-    &__triangle {
-
+        &:hover {
+            fill: #C12020;
+        }
     }
 }
