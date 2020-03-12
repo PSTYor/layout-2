@@ -5,14 +5,14 @@ mixin header-nav-items(items)
             each item in items
                 a(href="#").header-nav-items__item= item
 
-// Миксин для создания проектов
-mixin my-projects-projects-project
+// Миксин для создания номеров
+mixin numbers-projects-project
     - for (var i = 0; i <= 5; i++)
-        .my-projects-projects-project
-            .my-projects-projects-project__wrap
-                +add-svg("my-projects-projects-project__image", "icon-project")
-                .my-projects-projects-project__text проектов
-                    span.my-projects-projects-project__number 40+
+        .numbers-projects-project
+            .numbers-projects-project__wrap
+                +add-svg("numbers-projects-project__image", "icon-project")
+                .numbers-projects-project__text проектов
+                    span.numbers-projects-project__number 40+
 
 // Миксин для создания навыков
 mixin my-skills-skills(items)

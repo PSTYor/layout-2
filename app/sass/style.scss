@@ -20,13 +20,13 @@
 
 /* Главное содержимое */
 /* Обо мне */
-@import "blocks/article/about-us/about-us";
-@import "blocks/article/about-us/about-us-text/about-us-text";
+@import "blocks/article/about-me/about-me";
+@import "blocks/article/about-me/about-me-text/about-me-text";
 
 /* Мои проекты */
-@import "blocks/article/my-projects/my-projects";
-@import "blocks/article/my-projects/my-projects-projects/my-projects-projects";
-@import "blocks/article/my-projects/my-projects-projects/my-projects-projects-project/my-projects-projects-project";
+@import "blocks/article/numbers/numbers";
+@import "blocks/article/numbers/numbers-projects/numbers-projects";
+@import "blocks/article/numbers/numbers-projects/numbers-projects-project/numbers-projects-project";
 
 /* Мои навыки */
 @import "blocks/article/my-skills/my-skills";
