@@ -1,20 +1,17 @@
-// Микси для создание навигационной панели
 mixin header-nav-items(items)
     .header-nav-items
         .header-nav-items__wrap
             each item in items
                 a(href="#").header-nav-items__item= item
 
-// Миксин для создания номеров
 mixin numbers-projects-project
-    - for (var i = 0; i <= 5; i++)
+    - for(var i = 0; i <= 5; i++)
         .numbers-projects-project
             .numbers-projects-project__wrap
                 +add-svg("numbers-projects-project__image", "icon-project")
                 .numbers-projects-project__text проектов
                     span.numbers-projects-project__number 40+
 
-// Миксин для создания навыков
 mixin my-skills-skills(items)
     .my-skills-skills
         .my-skills-skills__wrap
@@ -24,7 +21,27 @@ mixin my-skills-skills(items)
                 .my-skills-skills__exp
                     span.my-skills-skills__exp-percent
 
-// Миксин для добавления svg
 mixin add-svg(name_class, name)
     svg(class="" + name_class)
         use(xlink:href="img/svg/symbol/svg/sprite.symbol.svg#" + name)
+
+mixin my-project-project
+    - for(var i = 0; i <= 7; i++)
+        .my-projects-project.my-projects-project__wrap
+            if i === 0 || i === 2
+                img(src="img/project-1.jpg" alt="изображение проекта").my-projects-project__image
+                .my-projects-project__block
+                    +add-svg("my-projects-project__icon", "icon-eye")
+            else if i > 3
+                if i === 4 || i === 6
+                    img(src="img/project-2.jpg" alt="изображение проекта").my-projects-project__image
+                    .my-projects-project__block
+                        +add-svg("my-projects-project__icon", "icon-eye")
+                else
+                    img(src="img/project-1.jpg" alt="изображение проекта").my-projects-project__image
+                    .my-projects-project__block
+                        +add-svg("my-projects-project__icon", "icon-eye")
+            else
+                img(src="img/project-2.jpg" alt="изображение проекта").my-projects-project__image
+                .my-projects-project__block
+                    +add-svg("my-projects-project__icon", "icon-eye")

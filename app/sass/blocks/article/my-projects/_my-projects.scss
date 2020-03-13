@@ -1,0 +1,10 @@
+.my-projects {
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &-project__wrap {
+        flex-basis: 25%;
+    }
+}

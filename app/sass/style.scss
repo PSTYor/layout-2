@@ -23,7 +23,7 @@
 @import "blocks/article/about-me/about-me";
 @import "blocks/article/about-me/about-me-text/about-me-text";
 
-/* Мои проекты */
+/* Мои номера */
 @import "blocks/article/numbers/numbers";
 @import "blocks/article/numbers/numbers-projects/numbers-projects";
 @import "blocks/article/numbers/numbers-projects/numbers-projects-project/numbers-projects-project";
@@ -35,6 +35,10 @@
 /* Как я работаю */
 @import "blocks/article/about-jobs/about-jobs";
 @import "blocks/article/about-jobs/about-jobs-video/about-jobs-video";
+
+/* Мои проекты */
+@import "blocks/article/my-projects/my-projects";
+@import "blocks/article/my-projects/my-projects-project/my-projects-project";
 
 
 /* Глобальные стили */
