@@ -1,6 +1,7 @@
 .button {
+    display: inline-block;
+
     &__btn {
-        display: inline-flex;
         padding: 19px 29px;
         background-color: #34547A;
         font-size: 14px;
