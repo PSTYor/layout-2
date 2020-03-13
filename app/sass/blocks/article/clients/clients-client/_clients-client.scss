@@ -1,0 +1,11 @@
+.clients-client {
+    &__wrap {
+    }
+
+    &__image {
+        width: 255px;
+        height: 120px;
+        background-image: url("../img/microsoft-client.png");
+        background-repeat: no-repeat;
+    }
+}

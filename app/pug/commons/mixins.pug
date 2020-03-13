@@ -45,3 +45,9 @@ mixin my-project-project
                 img(src="img/project-2.jpg" alt="изображение проекта").my-projects-project__image
                 .my-projects-project__block
                     +add-svg("my-projects-project__icon", "icon-eye")
+
+mixin clients-client
+    - for(var i = 0; i <= 3; i++)
+        .clients-client
+            .clients-client__wrap
+                .clients-client__image
