@@ -1,0 +1,17 @@
+.footer-copyright {
+    color: #fff;
+
+    &__inform {
+        padding: 0 0 10px 0;
+        font-weight: 500;
+        font-size: 21px;
+
+        &:first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    &__copy {
+        font-size: 13px;
+    }
+}

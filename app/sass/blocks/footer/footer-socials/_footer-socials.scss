@@ -1,0 +1,20 @@
+.footer-socials {
+    &__wrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon-social {
+        width: 44px;
+        height: 40px;
+        padding: 0 10px;
+        cursor: pointer;
+        fill: #fff;
+        transition: .3s;
+
+        &:hover {
+            fill: #c12020;
+        }
+    }
+}
