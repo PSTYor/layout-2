@@ -28,12 +28,12 @@ mixin add-svg(name_class, name_icon)
 mixin my-project-project(amount)
     - for(var i = 1; i <= amount; i++)
         .my-projects-project.my-projects-project__wrap
-            if i === 0 || i === 2
+            if i === 1 || i === 3
                 img(src='img/project-1.jpg' alt='изображение проекта').my-projects-project__image
                 .my-projects-project__block
                     +add-svg('my-projects-project__icon', 'icon-eye')
-            else if i > 3
-                if i === 4 || i === 6
+            else if i > 4
+                if i === 5 || i === 7
                     img(src='img/project-2.jpg' alt='изображение проекта').my-projects-project__image
                     .my-projects-project__block
                         +add-svg('my-projects-project__icon', 'icon-eye')
