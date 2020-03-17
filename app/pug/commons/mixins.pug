@@ -2,13 +2,13 @@ mixin header-nav-items(items)
     .header-nav-items
         .header-nav-items__wrap
             each item in items
-                a(href="#").header-nav-items__item= item
+                a(href='#').header-nav-items__item= item
 
-mixin numbers-projects-project
-    - for(var i = 0; i <= 5; i++)
+mixin numbers-projects-project(amount)
+    - for(var i = 1; i <= amount; i++)
         .numbers-projects-project
             .numbers-projects-project__wrap
-                +add-svg("numbers-projects-project__image", "icon-project")
+                +add-svg('numbers-projects-project__image', 'icon-project')
                 .numbers-projects-project__text проектов
                     span.numbers-projects-project__number 40+
 
@@ -21,37 +21,37 @@ mixin my-skills-skills(items)
                 .my-skills-skills__exp
                     span.my-skills-skills__exp-percent
 
-mixin add-svg(name_class, name)
-    svg(class="" + name_class)
-        use(xlink:href="img/svg/symbol/svg/sprite.symbol.svg#" + name)
+mixin add-svg(name_class, name_icon)
+    svg(class='' + name_class)
+        use(xlink:href='img/svg/symbol/svg/sprite.symbol.svg#' + name_icon)
 
-mixin my-project-project
-    - for(var i = 0; i <= 7; i++)
+mixin my-project-project(amount)
+    - for(var i = 1; i <= amount; i++)
         .my-projects-project.my-projects-project__wrap
             if i === 0 || i === 2
-                img(src="img/project-1.jpg" alt="изображение проекта").my-projects-project__image
+                img(src='img/project-1.jpg' alt='изображение проекта').my-projects-project__image
                 .my-projects-project__block
-                    +add-svg("my-projects-project__icon", "icon-eye")
+                    +add-svg('my-projects-project__icon', 'icon-eye')
             else if i > 3
                 if i === 4 || i === 6
-                    img(src="img/project-2.jpg" alt="изображение проекта").my-projects-project__image
+                    img(src='img/project-2.jpg' alt='изображение проекта').my-projects-project__image
                     .my-projects-project__block
-                        +add-svg("my-projects-project__icon", "icon-eye")
+                        +add-svg('my-projects-project__icon', 'icon-eye')
                 else
-                    img(src="img/project-1.jpg" alt="изображение проекта").my-projects-project__image
+                    img(src='img/project-1.jpg' alt='изображение проекта').my-projects-project__image
                     .my-projects-project__block
-                        +add-svg("my-projects-project__icon", "icon-eye")
+                        +add-svg('my-projects-project__icon', 'icon-eye')
             else
-                img(src="img/project-2.jpg" alt="изображение проекта").my-projects-project__image
+                img(src='img/project-2.jpg' alt='изображение проекта').my-projects-project__image
                 .my-projects-project__block
-                    +add-svg("my-projects-project__icon", "icon-eye")
+                    +add-svg('my-projects-project__icon', 'icon-eye')
 
-mixin clients-client
-    - for(var i = 0; i <= 3; i++)
+mixin clients-client(amount)
+    - for(var i = 1; i <= amount; i++)
         .clients-client
             .clients-client__wrap
                 .clients-client__image
 
-mixin footer-social
-    - for(var i = 0; i <= 2; i++)
-        +add-svg("footer-socials__icon-social", "icon-social")
+mixin footer-social(amount)
+    - for(var i = 1; i <= amount; i++)
+        +add-svg('footer-socials__icon-social', 'icon-social')
