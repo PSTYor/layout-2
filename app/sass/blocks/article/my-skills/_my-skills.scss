@@ -3,14 +3,32 @@
         display: flex;
         justify-content: space-around;
         padding: 100px 0;
+
+        @include g-mq-extra-small {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: $padding-block-g-extra-small;
+        }
+
+        @include mq-extra-small {
+            padding: $padding-block-extra-small;
+        }
     }
 
     &__left {
         display: flex;
         align-items: center;
+
+        @include g-mq-extra-small {
+            flex-basis: 100%;
+        }
     }
 
     &__image {
         width: 450px;
+
+        @include g-mq-extra-small {
+            width: 100%;
+        }
     }
 }

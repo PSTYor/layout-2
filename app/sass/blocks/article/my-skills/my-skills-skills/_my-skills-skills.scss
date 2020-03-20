@@ -1,8 +1,19 @@
 .my-skills-skills {
+    @include g-mq-extra-small {
+        flex-basis: 100%;
+    }
+
     &__wrap {
         display: flex;
         flex-direction: column;
-        width: 450px;
+
+        @include g-mq-extra-small {
+            padding: 0 0 30px 0;
+        }
+
+        @include mq-extra-small {
+            padding: 0 0 50px 0;
+        }
     }
 
     &__title {
@@ -13,12 +24,20 @@
         &:first-letter {
             text-transform: uppercase;
         }
+
+        @include g-mq-extra-small {
+            padding: 0 0 10px 0;
+        }
     }
 
     &__skill {
         padding: 20px 0;
         color: #727272;
         text-transform: uppercase;
+
+        @include g-mq-extra-small {
+            padding: 15px 0;
+        }
     }
 
     &__exp {

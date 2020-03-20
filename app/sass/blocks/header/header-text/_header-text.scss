@@ -3,12 +3,29 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        @include g-mq-extra-small {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+
+    &__image {
+        @include g-mq-extra-small {
+            width: 250px;
+        }
     }
 
     &__right {
         display: flex;
         flex-direction: column;
         flex-basis: 50%;
+
+        @include g-mq-extra-small {
+            flex-basis: 0;
+            padding: 30px 0 0 0;
+            align-items: center;
+        }
     }
 
     &__title {
@@ -19,6 +36,12 @@
         &:first-letter {
             text-transform: uppercase;
         }
+
+        @include g-mq-extra-small {
+            padding: 0 0 20px 0;
+            font-size: 38px;
+            text-align: center;
+        }
     }
 
     &__text {
@@ -26,9 +49,11 @@
         padding: 0 0 50px 0;
         line-height: 26px;
         color: #727272;
-    }
 
-    &__btn {
-
+        @include g-mq-extra-small {
+            width: 100%;
+            padding: 0 0 20px 0;
+            text-align: center;
+        }
     }
 }

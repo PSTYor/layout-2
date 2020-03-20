@@ -6,5 +6,14 @@
         flex-direction: column;
         align-items: center;
         padding: 70px 0;
+
+        @include g-mq-extra-small {
+            align-items: normal;
+            padding: $padding-block-g-extra-small;
+        }
+
+        @include mq-extra-small {
+            padding: $padding-block-extra-small;
+        }
     }
 }

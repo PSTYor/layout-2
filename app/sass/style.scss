@@ -60,36 +60,5 @@
 
 
 /* Глобальные стили */
+@import "blocks/different/different";
 @import "blocks/button/button";
-
-
-
-body {
-    font-family: $font-roboto;
-    font-size: 16px;
-}
-
-a {
-    text-decoration: none;
-}
-
-button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-}
-
-input, textarea {
-    border: none;
-}
-
-input:active,
-input:focus,
-button:active,
-button:focus,
-textarea:active,
-textarea:focus {
-    outline: none;
-}

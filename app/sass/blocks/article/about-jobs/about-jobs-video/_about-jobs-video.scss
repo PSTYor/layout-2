@@ -9,16 +9,25 @@
         background-image: url("../img/video.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include g-mq-extra-small {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+        }
     }
 
     &__btn {
         width: 100px;
-        height: 100px;
         fill: #fff;
         transition: .3s;
 
         &:hover {
             fill: #c12020;
+        }
+
+        @include g-mq-extra-small {
+            width: 80px;
         }
     }
 }

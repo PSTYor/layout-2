@@ -16,5 +16,9 @@
         &:hover {
             fill: #c12020;
         }
+
+        @include g-mq-extra-small {
+            width: 30px;
+        }
     }
 }

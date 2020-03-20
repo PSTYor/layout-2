@@ -1,5 +1,13 @@
 .about-me {
     &__wrap {
         padding: 100px 0 80px 0;
+
+        @include g-mq-extra-small {
+            padding: $padding-block-g-extra-small;
+        }
+
+        @include mq-extra-small {
+            padding: $padding-block-extra-small;
+        }
     }
 }

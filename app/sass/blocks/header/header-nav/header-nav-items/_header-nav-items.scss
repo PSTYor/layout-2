@@ -1,4 +1,8 @@
 .header-nav-items {
+    @include g-mq-extra-small {
+        display: none;
+    }
+
     &__wrap {
         display: flex;
     }

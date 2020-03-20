@@ -48,5 +48,8 @@
 
 // Контейнер для разрешения от 0 до 360px
 @media (min-width: 0) and (max-width: $screen-extra-e-small - 1px) {
-
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
 }

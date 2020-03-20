@@ -12,6 +12,10 @@
 
         &:hover {
             transform: scale(1.1);
+
+            @include g-mq-extra-small {
+                transform: scale(1.05);
+            }
         }
     }
 }

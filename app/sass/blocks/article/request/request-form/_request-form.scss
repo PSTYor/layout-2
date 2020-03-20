@@ -8,14 +8,29 @@
         justify-content: space-between;
         width: 540px;
         padding: 60px 0 0 0;
+
+        @include g-mq-extra-small {
+            justify-content: center;
+            padding: 30px 0 0 0;
+        }
     }
 
     &__name {
         flex-basis: 40%;
+
+        @include g-mq-extra-small {
+            flex-basis: 100%;
+            margin: 0 0 20px 0;
+        }
     }
 
     &__email {
         flex-basis: 40%;
+
+
+        @include g-mq-extra-small {
+            flex-basis: 100%;
+        }
     }
 
     &__text {
@@ -23,6 +38,10 @@
         height: 175px;
         margin: 20px 0 70px 0;
         resize: none;
+
+        @include g-mq-extra-small {
+            margin-bottom: 40px;
+        }
     }
 
     &__btn {

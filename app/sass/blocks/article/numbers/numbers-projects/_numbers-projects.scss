@@ -2,5 +2,9 @@
     &__wrap {
         display: flex;
         justify-content: space-between;
+
+        @include g-mq-extra-small {
+            flex-wrap: wrap;
+        }
     }
 }

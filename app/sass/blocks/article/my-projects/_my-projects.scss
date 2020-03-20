@@ -6,5 +6,9 @@
 
     &-project__wrap {
         flex-basis: 25%;
+
+        @include g-mq-extra-small {
+            flex-basis: 50%;
+        }
     }
 }

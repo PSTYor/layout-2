@@ -29,7 +29,10 @@
     &__icon {
         display: block;
         width: 100px;
-        height: 100px;
         fill: #fff;
+
+        @include g-mq-extra-small {
+            width: 70px;
+        }
     }
 }

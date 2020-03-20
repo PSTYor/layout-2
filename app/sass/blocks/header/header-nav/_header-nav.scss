@@ -3,5 +3,10 @@
         display: flex;
         justify-content: space-between;
         padding: 0 0 100px 0;
+
+        @include g-mq-extra-small {
+            justify-content: center;
+            padding: 0 0 60px 0;
+        }
     }
 }
