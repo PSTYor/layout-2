@@ -20,5 +20,9 @@
         &:hover {
             color: #34547A;
         }
+
+        @include mq-small {
+            padding: 15px 10px;
+        }
     }
 }

@@ -9,5 +9,9 @@
         @include mq-extra-small {
             padding: $padding-block-extra-small;
         }
+
+        @include mq-small {
+            padding: $padding-block-small;
+        }
     }
 }

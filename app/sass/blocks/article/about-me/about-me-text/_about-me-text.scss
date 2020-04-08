@@ -22,7 +22,15 @@
         color: #727272;
 
         @include g-mq-extra-small {
-            padding: 0 0;
+            padding: 0;
+        }
+
+        @include mq-small {
+            padding: 0;
+        }
+
+        @include mq-medium {
+            padding: 0 200px;
         }
     }
 }

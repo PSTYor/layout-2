@@ -34,5 +34,9 @@
         @include g-mq-extra-small {
             width: 70px;
         }
+
+        @include mq-small {
+            width: 80px;
+        }
     }
 }

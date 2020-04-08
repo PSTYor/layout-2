@@ -1,6 +1,7 @@
 .numbers-projects-project {
     &__wrap {
         display: flex;
+        padding: 0 0 30px 0;
         cursor: pointer;
         transition: .3s;
 
@@ -9,8 +10,6 @@
         }
 
         @include g-mq-extra-small {
-            padding: 0 0 30px 0;
-
             &:hover {
                 transform: scale(1.05);
             }

@@ -1,19 +1,17 @@
 .my-skills-skills {
+    flex-basis: 80%;
+
     @include g-mq-extra-small {
+        flex-basis: 100%;
+    }
+
+    @include mq-small {
         flex-basis: 100%;
     }
 
     &__wrap {
         display: flex;
         flex-direction: column;
-
-        @include g-mq-extra-small {
-            padding: 0 0 30px 0;
-        }
-
-        @include mq-extra-small {
-            padding: 0 0 50px 0;
-        }
     }
 
     &__title {

@@ -8,6 +8,11 @@
             flex-direction: column;
             justify-content: flex-start;
         }
+
+        @include mq-small {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
     }
 
     &__image {
@@ -22,6 +27,12 @@
         flex-basis: 50%;
 
         @include g-mq-extra-small {
+            flex-basis: 0;
+            padding: 30px 0 0 0;
+            align-items: center;
+        }
+
+        @include mq-small {
             flex-basis: 0;
             padding: 30px 0 0 0;
             align-items: center;
@@ -42,6 +53,11 @@
             font-size: 38px;
             text-align: center;
         }
+
+        @include mq-small {
+            padding: 0 0 35px 0;
+            text-align: center;
+        }
     }
 
     &__text {
@@ -53,6 +69,12 @@
         @include g-mq-extra-small {
             width: 100%;
             padding: 0 0 20px 0;
+            text-align: center;
+        }
+
+        @include mq-small {
+            width: 100%;
+            padding: 0 0 35px 0;
             text-align: center;
         }
     }

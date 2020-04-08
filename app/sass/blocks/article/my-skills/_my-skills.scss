@@ -1,34 +1,57 @@
 .my-skills {
     &__wrap {
         display: flex;
-        justify-content: space-around;
         padding: 100px 0;
 
         @include g-mq-extra-small {
             flex-wrap: wrap;
-            justify-content: flex-start;
             padding: $padding-block-g-extra-small;
         }
 
         @include mq-extra-small {
             padding: $padding-block-extra-small;
         }
+
+        @include mq-small {
+            padding: $padding-block-small;
+        }
     }
 
     &__left {
         display: flex;
         align-items: center;
+        flex-basis: 50%;
 
         @include g-mq-extra-small {
             flex-basis: 100%;
         }
+
+        @include mq-small {
+            flex-basis: 100%;
+        }
+    }
+
+    &__right {
+        flex-basis: 50%;
+
+        @include g-mq-extra-small {
+            flex-basis: 0;
+        }
+
+        @include mq-small {
+            flex-basis: 0;
+        }
     }
 
     &__image {
-        width: 450px;
+        width: 100%;
 
         @include g-mq-extra-small {
-            width: 100%;
+            display: none;
+        }
+
+        @include mq-small {
+            display: none;
         }
     }
 }
